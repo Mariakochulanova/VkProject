@@ -3,6 +3,8 @@ package domain.ru.netology;
 public class Vk {
     private int PostId;
     private String AuthorName;
+    private int AuthorID;
+    private AvatarInfo avatarInfo;
     private int date;
     private int time;
     private String text;
@@ -13,6 +15,53 @@ public class Vk {
     private RepostsInfo repostsInfo;
     private int view;
     private AttachmentsInfo attachmentsInfo;
+    private boolean CanPin;
+    private boolean CanDelete;
+    private boolean CanEdit;
+    private boolean IsPinned;
+    private boolean MarkedAsAds;
+    private String Copyright;
+    private int FriendsOnly;
+
+    public int getAuthorID() {
+        return AuthorID;
+    }
+
+    public void setAuthorID(int authorID) {
+        AuthorID = authorID;
+    }
+
+    public AvatarInfo getAvatarInfo() {
+        return avatarInfo;
+    }
+
+    public void setAvatarInfo(AvatarInfo avatarInfo) {
+        this.avatarInfo = avatarInfo;
+    }
+
+    public boolean isCanPin() {
+        return CanPin;
+    }
+
+    public void setCanPin(boolean canPin) {
+        CanPin = canPin;
+    }
+
+    public boolean isCanDelete() {
+        return CanDelete;
+    }
+
+    public void setCanDelete(boolean canDelete) {
+        CanDelete = canDelete;
+    }
+
+    public boolean isCanEdit() {
+        return CanEdit;
+    }
+
+    public void setCanEdit(boolean canEdit) {
+        CanEdit = canEdit;
+    }
 
     public int getPostId() {
         return PostId;
@@ -103,6 +152,36 @@ public class Vk {
         this.attachmentsInfo = attachmentsInfo;
     }
 
+    public boolean isPinned() {
+        return IsPinned;
+    }
 
+    public void setPinned(boolean pinned) {
+        IsPinned = pinned;
+    }
+
+    public boolean isMarkedAsAds() {
+        return MarkedAsAds;
+    }
+
+    public void setMarkedAsAds(boolean markedAsAds) {
+        MarkedAsAds = markedAsAds;
+    }
+
+    public String getCopyright() {
+        return Copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        Copyright = copyright;
+    }
+
+    public int getFriendsOnly() {
+        return FriendsOnly;
+    }
+
+    public void setFriendsOnly(int friendsOnly) {
+        FriendsOnly = friendsOnly;
+    }
 }
 
